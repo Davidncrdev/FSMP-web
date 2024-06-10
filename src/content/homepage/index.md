@@ -10,18 +10,18 @@ banner:
 
 ##key features
 key_features:
-  title: "Lo mejor de trabajar con nosotros"
+  title: "Servicios mas vendidos"
   description: .
   feature_list:
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Nos desplazamos donde tu lo necesitrs
-      content: Disponibilidad en toda Andalucia.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Album digital 
-      content: Para que puedas rememorar aquellos momentos.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Disponibilidad
-      content: Te pfrecemos un servicio de inicio a fin del evento sin coste extra.
+    - icon: "camera"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Pack Esencial 
+      content: Perfecto para capturar los momentos clave de cualquier evento.
+    - icon: "star"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Pack premiem - Bestseller
+      content: Ideal para quienes desean una cobertura más completa.
+    - icon: "film"  #icon package react-feather-icon [https://feathericons.com/]
+      title: pack exclusivo de Momentos
+      content: La opción más completa para cualquier tipo de evento. 
 
 
 #testimonials

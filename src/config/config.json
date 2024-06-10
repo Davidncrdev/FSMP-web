@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+   
     "logo_width": "147",
     "logo_height": "31",
     "logo_text": "Fyve studio"
@@ -38,7 +38,7 @@
     "location": "Málaga, España",
     "phone": "+34 641-43-76-67",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2024 a theme by [Fyve studio Media Pro](https://www.instagram.com/fyvestudio.pro)"
+    "copyright": "Copyright © 2024 Todos los derechos pertenecen a [Fyve studio Media Pro](https://www.instagram.com/fyvestudio.pro)"
   },
 
   "metadata": {

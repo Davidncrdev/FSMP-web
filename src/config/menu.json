@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "name":"Precios",
+      "url":"pricing"
+    },
+    {
       "name": "Quienes somos",
       "url": "/about"
     },

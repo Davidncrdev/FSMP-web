@@ -1,0 +1,35 @@
+{
+  "main": [
+    {
+      "name": "Fotografia de eventos",
+      "url": "/"
+    },
+    {
+      "name": "Quienes somos",
+      "url": "/about"
+    },
+    {
+      "name": "blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Album digital",
+      "url": "/how-it-works"
+    },
+    {
+      "name": "Contactanos",
+      "url": "/contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "Quienes somos",
+      "url": "/about"
+    },
+    {
+      "name": "Contactanos",
+      "url": "/contact"
+    }
+  ]
+}

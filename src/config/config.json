@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "Fyve studio",
+    "base_url": "https://pinwheel-astro.vercel.app",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "147",
+    "logo_height": "31",
+    "logo_text": "Fyve studio"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 100,
+    "blog_folder": "blog"
+  },
+
+  "call_to_action": {
+    "title": "Capturando eternamente tus momentos más preciados.",
+    "description": "En nuestra empresa, creemos que cada momento especial es único y merece ser atesorado para siempre. Nos comprometemos a capturar y preservar esos momentos más preciados de tu vida con pasión, creatividad y profesionalismo.",
+    "button": {
+      "label": "contacta con nosotros",
+      "link": "<a href=\"tel:+34641437667\">Llámame</a>"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  },
+
+  "params": {
+    "footer_description": "Vive el proceso.",
+    "email": "info@fyvestudio.pro",
+    "location": "Málaga, España",
+    "phone": "+34 641-43-76-67",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2024 a theme by [Fyve studio Media Pro](https://www.instagram.com/fyvestudio.pro)"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "pinwheel astro"
+  }
+}

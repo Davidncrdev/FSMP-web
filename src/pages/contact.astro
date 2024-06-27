@@ -2,11 +2,9 @@
 import PageHeader from "@/components/PageHeader.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
-import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("contact", "index");
-const { contact_form_action } = config.params;
 const contact = entry.data;
 const page_data = {
   ...contact,
@@ -27,111 +25,17 @@ const page_data = {
   <section class="section pt-0">
     <div class="container">
       <div class="row">
-        <div class="mb-10 text-center md:col-6 md:order-2 md:mb-0 md:pt-9">
-          <div class="contact-img relative inline-flex pb-5 pl-5">
-            <Image
-              src="/images/contact-img.png"
-              height={544}
-              width={500}
-              alt=""
-            />
-            <Image
-              class="absolute bottom-0 left-0 -z-[1] h-14 w-14"
-              src="/images/shape-2.png"
-              alt=""
-              height={56}
-              width={56}
-            />
-          </div>
-        </div>
-        <div class="md:col-6 md:order-1">
-          <form
-            class="lg:max-w-[484px]"
-            id="contact-form"
+        <div class="text-center">
+          <a 
+            class="btn btn-primary" 
+            href="https://wa.me/34641437667"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <div class="form-group mb-5">
-              <label class="form-label" for="name">Nombre</label>
-              <input
-                class="form-control"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Full Name"
-                required
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="email">Correo</label>
-              <input
-                class="form-control"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email Address"
-                required
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="reason">Ayuda</label>
-              <select name="reason" id="reason" class="form-select" required>
-                <option value="">Selecciona</option>
-                <option value="presupuesto">Presupuesto</option>
-                <option value="mas informacion">Más información</option>
-              </select>
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="message">Mensaje</label>
-              <textarea
-                class="form-control h-[150px]"
-                id="message"
-                name="message"
-                cols="30"
-                rows="10"
-                required
-              ></textarea>
-            </div>
-            <input
-              class="btn btn-primary block w-full"
-              type="submit"
-              value="Send Message"
-            />
-            <div id="form-message" class="mt-5"></div>
-          </form>
+            Contáctanos por WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </section>
-
-  <script>
-    document.getElementById('contact-form')?.addEventListener('submit', async (event) => {
-      event.preventDefault();
-
-      const form = event.target as HTMLFormElement;
-      const formData = new FormData(form);
-      const formMessage = document.getElementById('form-message') as HTMLElement;
-
-      if (formMessage) {
-        try {
-          const response = await fetch('/api/send-email', {
-            method: 'POST',
-            body: formData,
-          });
-
-          const result = await response.json();
-
-          if (response.ok) {
-            formMessage.textContent = 'Correo enviado exitosamente';
-            formMessage.style.color = 'green';
-            form.reset();
-          } else {
-            formMessage.textContent = `Error: ${result.message}`;
-            formMessage.style.color = 'red';
-          }
-        } catch (error) {
-          formMessage.textContent = 'Error enviando el correo';
-          formMessage.style.color = 'red';
-        }
-      }
-    });
-  </script>
 </Base>
